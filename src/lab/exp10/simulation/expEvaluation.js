@@ -516,11 +516,11 @@ window.view = {
 		var list = document.getElementById('operatorList')
 		var selectedOption = list.options[list.selectedIndex].text
 		if ( selectedOption === 'Logical' )
-			this.setEnvironment( 0, 1, 0, 1, 'logical', 'a || b && c' )
+			this.setEnvironment( 0, 0, 0, 0, 'logical', 'a || b && c' )
 		else if ( selectedOption === 'Bitwise' )
-			this.setEnvironment( 3, 2, 0, 1, 'bitwise', 'a | b & c ^ d' )
+			this.setEnvironment( 0, 0, 0, 0, 'bitwise', 'a | b & c ^ d' )
 		else
-			this.setEnvironment( 2, 5, 10, 11, 'arithmatic', 'a + b - c' )
+			this.setEnvironment( 0, 0, 0, 0, 'arithmatic', 'a + b - c' )
 	},
 	setSelectedEquation: function (id) {
 		var list = document.getElementById(id)
